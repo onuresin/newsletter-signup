@@ -8,14 +8,16 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #36384D;
 }
-.inner {
+.inner  {
   margin: 0 auto;
   width: 375px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   padding-bottom: 40px;
   background-color: #fff;
+}
+.container {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
 }
 .web-sec {
   display: none;
@@ -155,5 +157,50 @@ body {
   }
   & .bold-mail {
     font-weight: bold;
+  }
+}
+@media (min-width:1280px) {
+
+  .inner {
+    width: 928px;
+    flex-direction: row;
+    border-radius: 36px;
+    padding-bottom: 18px;
+  }
+  .container {
+    flex-direction: row;
+    padding-block: 24px;
+    padding: 24px 24px 0 64px;
+  }
+  .mobile-sec {
+    display: none;
+  }
+  .web-sec {
+    display: block;
+  }
+  .content {
+    padding-inline: 0;
+    padding-top: 30px;
+  }
+  .top {
+    & h4 {
+      font-size: 56px;
+    }
+  }
+  .hav-reg, .mail-type-sec, .close-btn {
+    width: 357px;
+  }
+  .popup {
+    margin: 0 auto;
+    width: 504px;
+    padding: 48px 64px 64px 64px;
+    display: block;
+  }
+  .popup-top-child {
+    & h3 {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 100%; /* 56px */ 
+    }
   }
 }

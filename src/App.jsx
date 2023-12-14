@@ -29,13 +29,12 @@ function App() {
     setShowPopup(false);
   };
   return (
-    <>
-      <div className="inner">
+    <div className="inner">
         {showPopup ? (
       <div className="popup">
         <span className='popup-top'>
           <img src="check.svg" alt="big-check" />
-          <span className='popup-top-child'>
+        <span className='popup-top-child'>
             <h3>Üye olduğunuz için teşekkürler!</h3>
             <p>Onay postası <span className='bold-mail'>{email}</span> adresine gönderildi. Lütfen açın ve içindeki onay butonuna tıklayarak üyeliğinizi başlatın.</p>
         </span>
@@ -44,7 +43,7 @@ function App() {
         <button className='close-btn' onClick={handleClosePopup}>Pencereyi Kapat</button>
       </div>
     ) : (
-      <div className="inner">
+      <div className="container">
         <div className="mobile-sec">
           <img src="mobile-mask.svg" alt="mobile-svg" />
         </div>
@@ -71,7 +70,7 @@ function App() {
       </div>
     )}
       </div>
-    </>
+
 )
 }
 
