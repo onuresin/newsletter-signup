@@ -31,9 +31,129 @@ body {
   font-weight: 700;
   line-height: 150%; /* 24px */
   cursor: auto;
+  margin-top: 24px;
 }
 .hav-reg:hover {
   background: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
   box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
   cursor: url('/public/Pointer .svg'), auto; 
+}
+.content {
+  padding-inline: 30px;
+  & h4 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 40px */ 
+    color: #242742;
+  }
+  & h6 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */ 
+    color: #242742;
+  }
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & li img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  margin-bottom: 40px;
+}
+.mail-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  & h6 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+    color: #242742;
+  }
+}
+.invalid-mail {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%; /* 18px */ 
+}
+.mail-type-sec {
+    width: 327px;
+    padding: 16px 176px 16px 24px;
+    border-radius: 8px;
+    cursor: url('/public/Pointer .svg'), auto;
+    border: 1px solid rgba(25, 24, 43, 0.25);
+}
+.mail-type-sec::placeholder {
+      color: #242742;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */ 
+      opacity: 0.5;
+}
+.popup {
+  width: 375px;
+  padding: 149px 24px 40px 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 263px;
+}
+.close-btn {
+  width: 327px;
+  border-radius: 8px;
+  background-color: #242742;
+  padding: 18px 46px 14px 48px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  cursor: auto;
+  margin-top: 24px;
+}
+
+.close-btn:hover {
+  background: linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%);
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+  cursor: url('/public/Pointer .svg'), auto; 
+}
+.popup-top {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+  & img {
+    width: 64px;
+  }
+}
+.popup-top-child {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  & h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%; /* 40px */ 
+    color: #242742;
+  }
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */ 
+    color: #242742;
+  }
+  & .bold-mail {
+    font-weight: bold;
+  }
 }
