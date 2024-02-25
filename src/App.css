@@ -162,6 +162,7 @@ body {
 @media (min-width:1280px) {
 
   .inner {
+    margin-top: 100px;
     width: 928px;
     flex-direction: row;
     border-radius: 36px;
